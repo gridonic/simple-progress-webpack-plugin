@@ -23,7 +23,7 @@ module.exports = function MinimalLogger( options ) {
 
 	// Initial log
 	let logLine = 'Webpack: Starting ...';
-	log( logLine );
+	// log( logLine );
 
 	/**
 	 * Use the webpack-internal progress plugin as the base of the logger
@@ -147,7 +147,7 @@ module.exports = function MinimalLogger( options ) {
 		}
 
 		// Finally, let's bring those logs to da screen
-		log( logLine );
+		// log( logLine );
 		if ( progress === 1 ) {
 			log.done();
 		}

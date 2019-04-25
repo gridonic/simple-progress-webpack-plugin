@@ -24,7 +24,7 @@ module.exports = function CompactLogger( options ) {
 
 	// Initial log
 	let logLines = [];
-	log( 'Webpack: Starting ...' );
+	// log( 'Webpack: Starting ...' );
 
 	/**
 	 * Use the webpack-internal progress plugin as the base of the logger
@@ -40,7 +40,7 @@ module.exports = function CompactLogger( options ) {
 		}
 
 		// STEP 0: HEADER
-		logLines.push( chalk.white( 'Webpack: Starting ...\n' ) );
+		// logLines.push( chalk.white( 'Webpack: Starting ...\n' ) );
 
 		// STEP 1: COMPILATION
 		if ( progress >= 0 && progress < 0.1 ) {
@@ -165,7 +165,7 @@ module.exports = function CompactLogger( options ) {
 			const finishTime = new Date().getTime();
 			const processTime = ( ( finishTime - startTime ) / 1000 ).toFixed( 3 );
 
-			logLines.push( chalk.white( `\nWebpack: Finished after ${ processTime } seconds.\n` ) );
+			// logLines.push( chalk.white( `\nWebpack: Finished after ${ processTime } seconds.\n` ) );
 
 		}
 

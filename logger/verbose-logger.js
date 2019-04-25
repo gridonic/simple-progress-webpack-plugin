@@ -19,7 +19,7 @@ module.exports = function VerboseLogger( options ) {
 
 	// Initial logs
 	let logLine;
-	console.log( `${ getTimePrefix() } Webpack: Starting ...\n` );
+	// console.log( `${ getTimePrefix() } Webpack: Starting ...\n` );
 
 	/**
 	 * Use the webpack-internal progress plugin as the base
@@ -72,7 +72,7 @@ module.exports = function VerboseLogger( options ) {
 
 		// Finally, let's bring those logs to da screen
 		if ( progress === 1 ) {
-			console.log( `\n${ getTimePrefix() } ${ logLine }` );
+			// console.log( `\n${ getTimePrefix() } ${ logLine }` );
 		} else {
 			console.log( `${ getTimePrefix() } Webpack (${ Math.round( progress * 100 ) }%) - ${ logLine }` );
 		}
